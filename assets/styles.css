@@ -1,0 +1,574 @@
+body{
+    margin: 0px;
+    padding: 0px;
+    background-color: rgb(24, 24, 24);
+    overflow-x: hidden;
+}
+
+.container3{
+    max-width: 768px;
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+}
+
+.grid3{
+    display: grid;
+    gap: 1.2rem;
+}
+
+.globeNav {
+    position: relative;
+    left: -1.5rem;
+}
+
+.addQuestion{
+    position: relative;
+    left: -2.5rem;
+}
+
+.header3{
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 2;
+    background-color: #262626;
+}
+
+a{
+    text-decoration: none;
+    color: rgb(133, 129, 129);
+}
+
+img{
+    max-width: 100%;
+    height: auto;
+}
+
+.brandName3{
+    position: relative;
+    right: 2rem;
+    color: rgb(245, 41, 54) !important;
+    font-weight: 600;
+    transition: .8s;
+}
+
+.brandName3:hover{
+    color: rgb(141, 4, 13) !important;
+}
+
+.navContainer{
+    width: 100%;
+    height: 3.5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navContainer div{
+    width: 50px;
+}
+
+.navContainer div a{
+    width: 100%;
+    font-size: 1.8rem;
+    color: #b1b3b6;
+}
+
+.icon{
+    position: relative;
+    left: 0.7rem;
+}
+
+.navContainer .iconDiv:hover{
+    background-color: rgb(51, 51, 51)
+}
+    
+.navContainer div a .uil-estate{
+    color: rgb(245, 41, 54) ;
+}
+
+.uil-align{
+    display: none;
+}
+
+input[type="text"]::placeholder {  
+    padding-left: 18px;
+    font-size: 18px;
+}
+input[type="text"]{
+    outline: none;
+    border: none;
+    color: white;
+}
+
+.navContainer .searchDiv a{
+    font-size: 1rem;
+}
+
+.navContainer div a img{
+    object-fit: cover;
+    margin-bottom: .3rem;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.navContainer div .searchPlace{
+    width: 15rem;
+    height: 1.6rem;
+    outline: none;
+    background-color: #181818;
+    border-radius: 3px;
+    line-height: 1.2;
+    margin-top: .3rem;
+    height: 2rem;
+}
+
+.addQuestion{
+    white-space: nowrap;
+    width: 8rem;
+    height: 2rem;
+    color: white;
+    font-size: 1rem;
+    outline: none;
+    border: none;
+    border-radius: 16px;    
+    background-color:rgb(245, 41, 54);
+}
+.addQuestion:hover{
+    background-color:rgb(247, 0, 16);
+}
+
+.titleImg{
+    object-fit: cover;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+}
+
+.questionCard{
+    background-color: rgba(44, 44, 44, 0.6) !important;
+    color: rgb(214, 209, 209);
+}
+
+.mainContainer  div{
+    margin: auto;
+    width: 600px;
+    background-color: rgba(44, 44, 44, 0.6);
+    color: rgb(214, 209, 209);
+}
+.iconToken{
+    position: relative;
+    width: 150px;
+    background-color: transparent !important;
+    display: grid;
+    grid-template-columns: 60px 60px;
+    grid-gap: 3.4rem;
+}
+
+.upDown{
+    cursor: pointer;
+    padding-left:7px ;
+    width: 100px !important;
+    background-color:rgba(24,24,24,0.6) !important;
+    height: 30px !important;
+    border: none;
+    border-radius: 25px;
+    display: grid;
+    grid-template-columns: 30px 30px;
+    grid-gap: 2.4rem;
+}
+.shareComment{
+    width: 70px !important;
+    height: 30px !important;
+    background-color: transparent !important;
+    display: grid;
+    grid-template-columns: 25px 25px;
+    grid-gap: 0.5rem;
+}
+.upDown div,.shareComment div{
+    width: 90px;
+    height: 30px;
+}
+
+.upDown div i,.shareComment div i{
+    font-size: 1.2rem;
+}
+
+.card-footer{
+    background-color: transparent !important;
+}
+
+.iconDiv{
+    background: transparent !important;
+}
+.postImg{
+    object-fit: contain;
+    height:400px;
+}
+/* Profile Page Customize */
+
+.profileContaniner{
+    margin: auto;
+    display: grid;
+    grid-template-columns: 1fr 302px;
+    grid-gap :5rem ;
+}
+
+.flexThem{
+    top: 0;
+    left: 0;
+    right: 0;
+    width: 100%;
+    display: flex;
+}
+
+
+.imgProfile{
+    object-fit: cover;
+    width: 130px;
+    height: 130px;
+    border-radius: 50%;
+}
+
+.Infos{
+    padding-left: 2rem;
+}
+
+.userItem{
+    font-size: 2rem ;
+    font-weight: 500;
+    color: rgb(197, 194, 194);
+}
+
+.credentialItem{
+    color: rgb(129, 128, 128);
+}
+
+.followers{
+   margin-bottom: 1rem;
+}
+
+.followersItem{
+    display: flex;
+    align-items: center;
+    color: rgb(192, 189, 189);
+}
+
+.followersItem .followDiv{
+    padding-left: 0.5rem;
+}
+
+.descriptionA:hover{
+    color: rgb(206, 204, 204) !important;
+}
+
+.gridThem{
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4,1fr);
+    grid-gap: 0.2rem;
+    padding-top: 1rem;
+}
+
+.t{
+    display: flex;
+}
+
+.gridThem div{
+    padding-top: 1rem;
+    width: 100px;
+    height: 50px;
+    color: rgb(179, 175, 175);
+}
+
+.gridThem div :hover{
+    background: rgb(36, 35, 35);
+}
+
+.s{
+    text-align: center;
+    display: flex;
+    justify-content: center;
+
+}
+
+hr{
+    color: rgb(173, 173, 173);
+}
+
+.profileElement{
+    color: rgb(187, 183, 183);
+    font-size: larger;
+    padding-left: 1rem;
+
+}
+
+.credentialsContainer{
+    position: relative;
+    top: -2rem;
+    margin:auto;
+    width: 60%;
+    padding: 10px;
+}
+
+.postIconContainer{
+    text-align: center;
+}
+
+.postIconItem{
+    font-size: 8rem;
+}
+
+.infoCredentials{
+    text-align: center;
+}
+
+.buttonElement{
+    text-align: center;
+}
+
+.postIcon{
+    font-weight: 500;
+    color: rgb(196, 191, 191);
+}
+
+/* Credintials Customize */
+
+
+.addingContainer{
+    margin-top: -1.16rem;
+}
+
+.credHigh{
+    display: flex;
+    justify-content: space-between;
+
+}
+
+.credHigh .credHighItem{
+    color:rgb(197, 194, 194)
+}
+
+.credHigh .credIcon{
+    width: 30px;
+    height: 30px;
+    background-color: rgb(51, 50, 50);
+    border:1px solid rgb(110, 108, 108);
+    border-radius: 50%;
+    text-align:  center;
+}
+
+.credHigh .credIcon i{
+    font-size: larger;
+    color: rgb(189, 186, 186);
+}
+
+.credhr{
+   position: relative;
+   top: -.6rem;
+}
+
+.itemGridElements{
+    display: grid;
+    grid-template-columns: 25px 1fr;
+    padding-top: .5rem;
+}
+
+.iconDiv1{
+    cursor: pointer;
+    text-align: center;
+    width: 30px;
+    height: 30px;
+    border: none;
+    border-radius: 50%;
+}
+
+.iconDiv1:hover{
+    background-color: rgb(65, 63, 63);
+}
+
+.blueInfoss{
+    color: rgb(13, 78, 218) !important;
+    opacity: 0.8;
+    font-size: 1rem;
+}
+
+.tr{
+    font-size: 1.2rem;
+    color:#b1b3b6;
+    
+}
+
+.infoss{
+    padding-top: .25rem;
+    padding-left: 1.1rem;
+    color: rgb(165, 164, 164);
+}
+
+/* Alt Credentials Container Customize */
+
+.catchThem{
+    display: flex;
+}
+
+.earthImage{
+    object-fit: cover;
+    height: 30px;
+    width: 30px;
+    border-radius: 50%;
+}
+
+.altInfoss{
+    padding-left: 1rem;
+    color: rgb(165, 164, 164);
+}
+
+/* Customize Add question */
+
+.allContainerColor{
+    margin-right: 104rem;
+    overflow-x: hidden;
+    color: white;
+    width: 1200px;
+    height: 550px;
+    z-index: 10;
+}
+
+.popUpAskingQuestion{
+    padding: 25px;
+    border-radius: 8px;
+    border:1px solid rgb(82, 82, 82);
+    overflow-x: hidden;
+    left:0;
+    right:0;
+    margin-left: auto;
+    margin-right: auto;
+    width: 40%;
+    height:450px;
+    z-index: 5;
+    transition: .8s;
+    background-color: rgb(24, 24, 24);
+} 
+
+.heading{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 210px 120px;
+    height: 3rem;
+    color: rgb(167, 161, 161);
+    font-weight: 600;
+}
+
+.askQuestionParagraphItem{
+    position: relative;
+    top: -.5rem;
+}
+
+.closeIcon i{
+    position: relative;
+    top: -.8rem;
+    font-size: larger;
+}
+
+.imgAsked{
+    object-fit: cover;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+}
+
+.tips{
+    border: none;
+    border-radius: 3px;
+    padding: 15px;
+    width: 100%;
+    height: 130px;
+    background-color: #0f3872;
+    color: #4894fd;
+}
+
+.listUl{
+    color:#2e69ff 
+}
+
+.shadow-textarea textarea.form-control::placeholder {
+    font-weight: 300;
+}
+.shadow-textarea textarea.form-control {
+    padding-left: 0.8rem;
+}
+
+.whoAsked{
+    color:rgb(134, 133, 133) ;
+}
+
+.iContaineName{
+    display: flex;
+    padding: 10px;
+}
+
+.textAreaDiv{
+    margin-top: .8rem;
+}
+
+textarea{
+    border: none !important;
+    border-bottom: 1px solid rgb(138, 136, 136) !important;
+    background-color: transparent !important;
+}
+textarea::placeholder{
+    font-size: 1rem;
+    font-weight: 700;
+}
+
+/* Button Carry */
+
+.carryButtons{
+    float: right;
+}
+
+.buttons{
+    display: grid;
+    grid-template-columns: 60px 140px;
+    grid-gap: 1rem ;
+    margin-top: 6.5rem;
+}
+
+.askButton{
+    opacity: 0.8;
+    height: 2.5rem;
+    width: 9rem;
+    font-weight: 600;
+    border: none;
+    border-radius: 20px;
+}
+
+.cancelBtn3{
+    border: none;
+    outline: none;
+    background-color: none;
+    background: none;
+    color: rgb(167, 161, 161);
+    font-weight: 600;
+}
+
+.cancelBtn{
+    margin: auto;
+}
+
+.changeOpacity{
+    opacity:0.3;
+}
+.changeToBack{
+    opacity: 1;
+}
+
+.popUpDisplayNone{
+    display: none;
+}
+
+.popUpDislayBlock{
+    display: block;
+}

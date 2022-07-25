@@ -1,0 +1,307 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="./styles.css">
+        <!-- <script src="https://kit.fontawesome.com/2cad01ea36.js"
+        crossorigin="anonymous"></script> -->
+
+        <link
+            rel="stylesheet"
+            href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <div class="container3">
+            <header class="header3">
+                <div class="navContainer grid3">
+                    <div>
+                        <a href="" class="brandName3">Quira</a>
+                    </div>
+                    <div class="iconDiv">
+                        <a href="../index.html" class="icon">
+                            <i class="uil uil-estate"></i>
+                        </a>
+                    </div>
+                    <div class="iconDiv">
+                        <a href="" class="icon">
+                            <i class="uil uil-list-ul"></i>
+                        </a>
+                    </div>
+                    <div class="iconDiv">
+                        <a href="" class="icon">
+                            <i class="uil uil-edit"></i>
+                        </a>
+                    </div>
+                    <div class="iconDiv">
+                        <a href="" class="icon">
+                            <i class="uil uil-users-alt"></i>
+                        </a>
+                    </div>
+                    <div class="iconDiv">
+                        <a href="" class="icon">
+                            <i class="uil uil-bell"></i>
+                        </a>
+                    </div>
+                    <div><input type="text" class="searchPlace" placeholder="Search Quira"></div>
+                    <div>
+                        <a href="">
+                            <i class="uil uil-align"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <i class="uil uil-align"></i>
+                        </a>
+                    </div>
+                    <div class="searchDiv">
+                        <a href="">
+                            <i class="uil uil-search"></i>
+                        </a>
+                    </div>
+                    <div class="iconDiv">
+                        <a href="./profile.html" class="icon"><img src="./img/20200705_122632.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="" class="icon">
+                            <i class="uil uil-globe globeNav"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <button id="addQuestion" class="addQuestion" onclick="dersOlsun()">Add Question</button>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="popUpAskingQuestion popUpDisplayNone" id="popUpAskingQuestion" style="position: absolute;">
+            <div class="heading">
+                <div class="closeIcon" onclick="derdiCixar()" style="cursor: pointer;">
+                    <i class="uil uil-multiply"></i>
+                </div>
+                <div class="askQuestionParagraph">
+                    <div class="askQuestionParagraphItem">
+                        Add Question
+                    </div>
+                </div>
+            </div>
+            <div class="tips">
+                <div class="tipsHeading">
+                    Tips on getting good answers quickly
+                </div>
+                <div class="listTips">
+                    <ul class="listUl">
+                        <li>Make Sure your questions has not been asked already</li>
+                        <li>Keep your questions short and to the point</li>
+                        <li>Double-check grammar and spelling</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="askedContainer">
+                <div class="iContaineName">
+                    <div class="imageAsked">
+                        <img src="./img/20200705_122632.jpg" alt="" class="imgAsked">
+                    </div>
+                    <div class="whoAsked">
+                        <span>&nbsp;&nbsp;Hacaga Hesenli</span>
+                        asked
+                    </div>
+                </div>
+                <div class="form-group shadow-textarea textAreaDiv">
+                    <textarea
+                        class="form-control z-depth-1"
+                        rows="1"
+                        placeholder='Start your question with "What", "How", "Why", etc.'></textarea>
+                </div>
+            </div>
+            <div class="footerDiv">
+                <div class="carryButtons">
+                    <div class="buttons">
+                        <div class="cancelBtn">
+                            <button onclick="derdiCixar()" id="addQuestionCancel" class="cancelBtn3">Cancel</button>
+                        </div>
+                        <div class="askQuestionBtn">
+                            <form action="" onclick="derdiCixar()">
+                                <button type="submit" id="addQuestionFinal" class="btn btn-primary askButton">Ask question</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <div
+            class="profileContaniner"
+            style="width: 935px; margin-top: 6rem !important;">
+            <div class="altProfileContainer">
+                <div class="flexThem">
+                    <div class="nameAndImage">
+                        <img src="./img/20200705_122632.jpg" alt="" class="imgProfile">
+                    </div>
+                    <div class="Infos">
+                        <div class="userName">
+                            <div class="userItem">
+                                <span>Hesenli Hacaga</span>
+                            </div>
+                        </div>
+                        <div class="credentialProfile">
+                            <div class="credentialItem">
+                                Add profile credential
+                            </div>
+                        </div>
+                        <div class="followers">
+                            <div class="followersItem">
+                                <div>
+                                    <span>0</span>
+                                    followers
+                                </div>
+                                <div class="followDiv">
+                                    <span>&#183;</span>
+                                </div>
+                                <div class="followDiv">
+                                    <span>0</span>
+                                    following
+                                </div>
+                            </div>
+                        </div>
+                        <div class="descriptionName">
+                            <div class="descriptionItem">
+                                <a href="" class="descriptionA">
+                                    Write a description about yourself</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="gridThem">
+                    <div>
+                        <div class="profileItem s">
+                            Profile
+                        </div>
+                    </div>
+                    <div>
+                        <div class="answersItem t s">
+                            <span id="q1">0 &nbsp;</span>
+                            Answers
+                        </div>
+                    </div>
+                    <div>
+                        <div class="questionsItem t s">
+                            <span id="q1">0 &nbsp;</span>
+                            Questions
+                        </div>
+                    </div>
+                    <div >
+                        <div class="postsItem t s">
+                            <span id="q1">0 &nbsp;</span>
+                            Posts
+                        </div>
+                    </div>
+                </div>
+                <hr>
+                <div class="credentialsContainer">
+                    <div class="postIconContainer">
+                        <div class="postIconItem">
+                            <i class="uil uil-mailbox postIcon"></i>
+                        </div>
+                    </div>
+                    <div class="infoCredentials">
+                        You haven't shared , answered or posted anything yet
+                    </div>
+                    <br>
+                    <div class="buttonElement">
+                        <form action="">
+                            <button id="addQuestionInside" class="btn btn-primary btn-lg btnCustom">Answer Questions</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <div class="secondAltContainer">
+                <div class="credHigh">
+                    <div class="credHighItem">
+                        Credentials & Highlights
+                    </div>
+                    <div class="credIcon">
+                        <i class="uil uil-lightbulb-alt"></i>
+                    </div>
+                </div>
+                <hr class="credhr">
+                <div class="addingContainer">
+                    <div class="educationItem itemGridElements">
+                        <div class="iconDiv1">
+                            <i class="uil uil-server tr"></i>
+                        </div>
+                        <div class="infoss blueInfoss">Add programming languages</div>
+                    </div>
+                    <div class="educationItem itemGridElements">
+                        <div class="iconDiv1">
+                            <i class="uil uil-graduation-cap tr"></i>
+                        </div>
+                        <div class="infoss blueInfoss">Add education credetial</div>
+                    </div>
+                    <div class="language itemGridElements">
+                        <div
+                            class="iconDiv1 ll"
+                            style="background-color: rgb(65, 63, 63);
+                        ">
+                            <i class="uil uil-globe tr"></i>
+                        </div>
+                        <div class="infoss">
+                            Knows English
+                        </div>
+                    </div>
+                    <div class="date itemGridElements">
+                        <div
+                            class="iconDiv1 ll"
+                            style="    background-color: rgb(65, 63, 63);
+                        ">
+                            <i class="uil uil-calendar-alt tr"></i>
+                        </div>
+                        <div class="infoss">
+                            Joined
+                            <span>November</span>
+                            <span>2019</span>
+                        </div>
+                    </div>
+                </div>
+                <br>
+                <div class="altAddingContainer">
+                    <div class="credHigh">
+                        <div class="credHighItem">
+                            Knows About
+                        </div>
+                        <div class="credIcon">
+                            <i class="uil uil-lightbulb-alt"></i>
+                        </div>
+                    </div>
+                    <hr class="credhr">
+                    <div class="credAltHigh">
+                        <div class="catchThem">
+                            <div class="imgDiv2">
+                                <img
+                                    src="./img/earth-earth-at-night-night-lights-41949.jpeg"
+                                    alt=""
+                                    class="earthImage">
+                            </div>
+                            <div class="altInfoss">
+                                English(languages)
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+    <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+    <script src="./js/script.js"></script>
+</html>

@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <link
+            href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/css/bootstrap.min.css"
+            rel="stylesheet"
+            integrity="sha384-KyZXEAg3QhqLMpG8r+8fhAXLRk2vvoC2f3B09zVXn8CA5QIVfZOJ3BCsw2P0p/We"
+            crossorigin="anonymous">
+        <link rel="stylesheet" href="./assets/styles.css">
+        <!-- <script src="https://kit.fontawesome.com/2cad01ea36.js"
+        crossorigin="anonymous"></script> -->
+
+        <link
+            rel="stylesheet"
+            href="https://unicons.iconscout.com/release/v4.0.0/css/line.css">
+        <link
+            href="https://fonts.googleapis.com/css2?family=Ubuntu+Mono:wght@700&display=swap"
+            rel="stylesheet">
+    </head>
+    <body>
+        <div class="container3">
+            <header class="header3">
+                <div class="navContainer grid3">
+                    <div>
+                        <a href="" class="brandName3">Quira</a>
+                    </div>
+                    <div class="iconDiv">
+                        <a href="index.html" class="icon">
+                            <i class="uil uil-estate"></i>
+                        </a>
+                    </div>
+                    <div class="iconDiv">
+                        <a href="" class="icon">
+                            <i class="uil uil-list-ul"></i>
+                        </a>
+                    </div>
+                    <div class="iconDiv">
+                        <a href="" class="icon">
+                            <i class="uil uil-edit"></i>
+                        </a>
+                    </div>
+                    <div class="iconDiv">
+                        <a href="" class="icon">
+                            <i class="uil uil-users-alt"></i>
+                        </a>
+                    </div>
+                    <div class="iconDiv">
+                        <a href="" class="icon">
+                            <i class="uil uil-bell"></i>
+                        </a>
+                    </div>
+                    <div><input type="text" class="searchPlace" placeholder="Search Quira"></div>
+                    <div>
+                        <a href="">
+                            <i class="uil uil-align"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <a href="">
+                            <i class="uil uil-align"></i>
+                        </a>
+                    </div>
+                    <div class="searchDiv">
+                        <form action="">
+                            <a href="">
+                                <i class="uil uil-search"></i>
+                            </a>
+                        </form>
+                    </div>
+                    <div class="iconDiv">
+                        <a href="./assets/profile.html" class="icon"><img src="./assets/img/20200705_122632.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a href="" class="icon">
+                            <i class="uil uil-globe globeNav"></i>
+                        </a>
+                    </div>
+                    <div>
+                        <button onclick="openPage()"  id="addQuestion" class="addQuestion">Add Question</button>
+                    </div>
+                </div>
+            </header>
+        </div>
+        <div class="popUpAskingQuestion popUpDisplayNone" id = "popUpAskingQuestion" style="position: absolute;">
+            <div class="heading">
+                <div class="closeIcon" onclick="closePage()" style="cursor: pointer;">
+                    <i class="uil uil-multiply"></i>
+                </div>
+                <div class="askQuestionParagraph">
+                    <div class="askQuestionParagraphItem">
+                        Add Question
+                    </div>
+                </div>
+            </div>
+            <div class="tips">
+                <div class="tipsHeading">
+                    Tips on getting good answers quickly
+                </div>
+                <div class="listTips">
+                    <ul class="listUl">
+                        <li>Make Sure your questions has not been asked already</li>
+                        <li>Keep your questions short and to the point</li>
+                        <li>Double-check grammar and spelling</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="askedContainer">
+                <div class="iContaineName">
+                    <div class="imageAsked">
+                        <img src="./assets/img/20200705_122632.jpg" alt="" class="imgAsked">
+                    </div>
+                    <div class="whoAsked">
+                        <span>&nbsp;&nbsp;Hacaga Hesenli</span>
+                        asked
+                    </div>
+                </div>
+                <div class="form-group shadow-textarea textAreaDiv">
+                    <textarea
+                        class="form-control z-depth-1"
+                        rows="1"
+                        placeholder='Start your question with "What", "How", "Why", etc.'></textarea>
+                </div>
+            </div>
+            <div class="footerDiv">
+                <div class="carryButtons">
+                    <div class="buttons">
+                        <div class="cancelBtn">
+                            <button onclick="closePage()" id="addQuestionCancel" class="cancelBtn3">Cancel</button>
+                        </div>
+                        <div class="askQuestionBtn">
+                            <form action="" onclick="closePage()">
+                                <button  id="addQuestionFinal" class="btn btn-primary askButton">Ask question</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>  
+            </div>
+        </div>
+        <div class="mainContainer">
+            <div class="questionContainer">
+                <div
+                    class="card m-auto "
+                    style="width: 600px; height: 100px; margin-top: 5rem !important;">
+                    <div class="card-header mt-2 questionCard" style=" border: none !important;">
+                        <img src="./assets/img/20200705_122632.jpg" class="titleImg" alt="">
+                        Hesenli Hacaga
+                        <h6 class="card-title mt-2" style="color:#8e9092; font-size: larger;">What is your question link ?</h5>
+                    </div>
+                </div>
+            </div>
+            <div
+                class="card mb-3 m-auto postCardContainer"
+                style="width: 600px; margin-top: 0.5rem !important;">
+                <div class="card-body">
+                    <h5 class="card-title">
+                        <img src="./assets/img/20200705_122632.jpg" class="titleImg" alt="">
+                        Hesenli Hacaga</h5>
+                    <p class="card-text">This is a wider card with supporting text below as a
+                        natural lead-in to additional content. This content is a little bit longer.</p>
+                    <p class="card-text">
+                        <small class="text-muted">Last updated 0 min ago</small>
+                    </p>
+                </div>
+                <img
+                    src="./assets/img/20200705_122632.jpg"
+                    class="card-img-bottom postImg"
+                    alt="...">
+                <div class="card-footer">
+                    <div class="iconToken">
+                        <div class="upDown">
+                            <div class="iconDiv sh">
+                                <form action="">
+                                    <a href="">
+                                        <i class="uil uil-arrow-up"></i>
+                                    </a>
+                                    <span class="likeCount">85.7k</span>
+                                </form>
+                            </div>
+                            <div class="iconDiv sh">
+                                <form action="">
+                                    <a href="">
+                                        <i class="uil uil-arrow-down"></i>
+                                    </a>
+                                </form>
+                            </div>
+                        </div>
+                        <div class="shareComment">
+                            <div class="iconDiv">
+                                <form action="">
+                                    <a href="">
+                                        <i class="uil uil-share"></i>
+                                    </a>
+                                </form>
+                            </div>
+                            <div class="iconDiv">
+                                <form action="">
+                                    <a href="">
+                                        <i class="uil uil-comment"></i>
+                                    </a>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </body>
+  <script src="./assets/js/script.js"></script>
+  <script
+  src="https://code.jquery.com/jquery-3.6.0.min.js"
+  integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+  crossorigin="anonymous"></script>
+</html>
