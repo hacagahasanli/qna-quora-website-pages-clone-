@@ -4,5 +4,3 @@
 
 ### [HomepPageContains] : hide (x) , profile owner , header , image , up vote , comment 
 
-## Thx for everything to me 
-### Still sad I am
